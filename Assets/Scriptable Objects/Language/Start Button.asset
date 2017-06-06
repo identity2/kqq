@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff618a9cffeb844d4a49e5f7f9ba19f6, type: 3}
+  m_Name: Start Button
+  m_EditorClassIdentifier: 
+  englishSprite: {fileID: 21300026, guid: 88081e23697dc4da180d09f84f74ab08, type: 3}
+  chineseSprite: {fileID: 21300070, guid: 88081e23697dc4da180d09f84f74ab08, type: 3}

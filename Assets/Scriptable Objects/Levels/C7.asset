@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fceb3eee516604975bf468d85d4f7b55, type: 3}
+  m_Name: C7
+  m_EditorClassIdentifier: 
+  galaxy: 3
+  level: 7
+  sceneIndex: 37
+  chineseName: "\u96FB\u98A8\u6247\u58DE\u4E86"
+  englishName: Broken Fan

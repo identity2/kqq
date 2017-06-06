@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000012517671456}
+  m_IsPrefabParent: 1
+--- !u!1 &1000012517671456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000013669135186}
+  - component: {fileID: 114000010893620744}
+  m_Layer: 0
+  m_Name: Random Shape
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000013669135186
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012517671456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114000010893620744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012517671456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9424d29581f374fab92b9abafbbf4b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shapePrefabs:
+  - {fileID: 1000012601414666, guid: ff489b61e1ff74ec083c643f4380619a, type: 2}
+  - {fileID: 1000014015755910, guid: ce477364d501e43809d53f00b231356f, type: 2}
+  - {fileID: 1000013181724976, guid: 2292bf13dcd0643658f6356cfd82818f, type: 2}
+  - {fileID: 1000010321601122, guid: bf7afff71d9ab475c815facfa9d9a49c, type: 2}
+  - {fileID: 1000012631815316, guid: 06748fa7a8c564f6794a50192237b0ff, type: 2}
+  - {fileID: 1000012262203986, guid: 59a86b50408f14b3faa848d0fb0b335c, type: 2}
+  - {fileID: 1000012767283768, guid: 1f3d6e0a957dd40da966b291ace7cea7, type: 2}
+  forceCap: 100
+  applyIntervalCap: 3
+  minScale: 0.3
+  maxScale: 5
+  minAlpha: 0.1
+  maxAlpha: 0.7
