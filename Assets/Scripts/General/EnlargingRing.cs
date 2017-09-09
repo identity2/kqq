@@ -15,7 +15,7 @@ public class EnlargingRing : MonoBehaviour
 
 	void Start()
 	{
-		lineRenderer.numPositions = (int)(360f / degPreSegment) + 1;
+		lineRenderer.positionCount = (int)(360f / degPreSegment) + 1;
 
 		//obsolete
 		//lineRenderer.SetVertexCount((int)(360f / degPreSegment) + 1);
