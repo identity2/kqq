@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class RemoveAdsButton : MonoBehaviour 
 {
+	void Start()
+	{
+		if (!GameDataLoaderAndSaver.dataControl.SholdShowAds())
+		{
+			gameObject.SetActive(false);
+		}
+	}
+
 	public void OnClicked()
 	{
 		InAppPurchaser.Instance.BuyRemoveAds();

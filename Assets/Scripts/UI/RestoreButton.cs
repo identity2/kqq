@@ -9,6 +9,11 @@ public class RestoreButton : MonoBehaviour
 		#if UNITY_ANDROID
 		gameObject.SetActive(false);
 		#endif
+
+		if (!GameDataLoaderAndSaver.dataControl.SholdShowAds())
+		{
+			gameObject.SetActive(false);
+		}
 	}
 
 	public void OnClicked()

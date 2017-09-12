@@ -5,17 +5,20 @@ using UnityEngine.UI;
 
 public class NotificationPopUpMenu : MonoBehaviour 
 {
-	public static NotificationPopUpMenu Instance;
+	public static NotificationPopUpMenu Instance = null;
 	public Text messageText;
 
 	void Awake () {
-		Instance = this;
-		gameObject.SetActive(false);
+		if (Instance == null)
+		{
+			Instance = this;
+			gameObject.SetActive(false);
+			DontDestroyOnLoad(gameObject);
+		} else if (Instance != this) {
+			Destroy(gameObject);
+		}
 	}
-	
-	void Update () {
-		
-	}
+
 	public void Show(string message)
 	{
 		messageText.text = message;
