@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 7
+  serializedVersion: 8
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -25,6 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -41,7 +42,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 7
+  serializedVersion: 11
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -53,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 4
+    serializedVersion: 9
     m_Resolution: 2
     m_BakeResolution: 40
     m_TextureWidth: 1024
@@ -66,13 +67,27 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_DirectLightInLightProbes: 1
     m_FinalGather: 0
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
+    m_MixedBakeMode: 1
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFiltering: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousColorSigma: 1
+    m_PVRFilteringAtrousNormalSigma: 1
+    m_PVRFilteringAtrousPositionSigma: 1
   m_LightingDataAsset: {fileID: 0}
-  m_RuntimeCPUUsage: 25
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -89,6 +104,8 @@ NavMeshSettings:
     minRegionArea: 2
     manualCellSize: 0
     cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &51291581
@@ -173,9 +190,20 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
+  m_UsedByComposite: 0
   m_Offset: {x: 3.9413722, y: -6.388635}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1.1545634, y: 13.77727}
+  m_EdgeRadius: 0
 --- !u!61 &63579414
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -187,9 +215,20 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
+  m_UsedByComposite: 0
   m_Offset: {x: -3.9156115, y: -6.388635}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.9999995, y: 13.77727}
+  m_EdgeRadius: 0
 --- !u!61 &63579415
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -201,9 +240,20 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
+  m_UsedByComposite: 0
   m_Offset: {x: -0.02280426, y: -12.86133}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 6.806678, y: 0.94945145}
+  m_EdgeRadius: 0
 --- !u!61 &63579416
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -215,9 +265,20 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
+  m_UsedByComposite: 0
   m_Offset: {x: -0.0226506, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 6.752742, y: 1}
+  m_EdgeRadius: 0
 --- !u!4 &63579417
 Transform:
   m_ObjectHideFlags: 0
@@ -398,6 +459,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212000010913071628, guid: 5abe7dc70a2074897b7cffc95ab65cc6,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300036, guid: 5b1bf8cea7150437abe2f643846585e6,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5abe7dc70a2074897b7cffc95ab65cc6, type: 2}
   m_IsPrefabParent: 0
@@ -537,11 +604,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22449284, guid: 69c6a317e06c1442b9172ad193615d52, type: 2}
       propertyPath: m_SizeDelta.y
-      value: -0.67858887
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22449284, guid: 69c6a317e06c1442b9172ad193615d52, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -81.1947
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69c6a317e06c1442b9172ad193615d52, type: 2}
@@ -592,6 +659,10 @@ Prefab:
     - target: {fileID: 11433312, guid: c2d9a9f369711498a9c5e428e1248bf5, type: 2}
       propertyPath: toIndex
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 21287840, guid: c2d9a9f369711498a9c5e428e1248bf5, type: 2}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2d9a9f369711498a9c5e428e1248bf5, type: 2}
@@ -864,11 +935,18 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7cc076903d66c48ac8b64b58f8b3c70f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.29411766}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &1831401113
 Transform:
   m_ObjectHideFlags: 0

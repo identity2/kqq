@@ -8,3 +8,6 @@
 [2017.09.12 (ver. 2.0.2)]
 * Hide "Remove Ads" and "Restore Purchase" button if already bought.
 * Fix the bug that the pop-up menu is null.
+
+[2018.07.09 (ver. 2.0.3)(Android: 14, iOS: 13)]
+* Updated logo.
